@@ -230,4 +230,69 @@ a:hover{
         border-radius: 0.2em;
     }
 }
+#vModal{
+    position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 80%;
+            height: 80%;
+            margin: auto;
+            background-color: rgba(19, 19, 19, 0.966);
+            z-index: 1;
+            display: none;
+            
+}
+
+#vModal:target {
+    display: flex;
+  }
+
+#vModal p {
+    font-family: meethos;
+    width: 60%;
+		height: 40%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: auto;
+		font-size: 2em;
+		text-align: center;
+  }
+
+  #mostrarModal {
+    display: block;
+  }
+  #mostrarModal{
+    display: table;
+    margin: auto;
+    padding: 0 1em;
+    border-radius: 0.5em;
+  }
+  #mostrarModal:hover {
+    background: rgb(104, 18, 18);
+  }
+  
+  #cerrarModal{
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    z-index: 100;
+    display: table;
+    width: 150px;
+    height: 50px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 0.5em;
+    transition: all .5s;
+  }
+
+  #cerrarModal:hover {
+    background: rgb(104, 18, 18);
+    
+  }
+
 }
